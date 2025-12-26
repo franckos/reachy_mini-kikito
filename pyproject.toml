@@ -1,0 +1,9 @@
+[project]
+name = "kikito"
+version = "0.1.0"
+description = ""
+requires-python = ">=3.12"
+dependencies = [
+    "reachy-mini[gstreamer]>=1.2.5",
+]
+
