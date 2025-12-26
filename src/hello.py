@@ -1,7 +1,7 @@
 from reachy_mini import ReachyMini
 
 # Connect to the running daemon
-with ReachyMini(localhost_only=False) as mini:
+with ReachyMini(localhost_only=False, timeout=15.0) as mini:
     print("Connected to Reachy Mini! ")
 
     # Wiggle antennas
