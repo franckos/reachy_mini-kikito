@@ -13,7 +13,20 @@ uv sync
 ```
 
 Pour exécuter un script Python :
+
+**⚠️ Important : Connexion réseau requise**
+Le terminal intégré de Cursor bloque l'accès réseau (sandbox), ce qui empêche la connexion au robot Reachy Mini. **Vous devez exécuter le script depuis un terminal externe** (Terminal.app, iTerm2, etc.).
+
+**Option 1 : Utiliser le script shell (recommandé)**
 ```bash
+./run.sh
+```
+
+**Option 2 : Exécuter directement avec uv**
+Depuis un terminal externe :
+```bash
+cd /Users/franckmarandet/Documents/WORK/ALFRED/Reachy/Kikito
+source reachy_mini_env/bin/activate
 uv run python src/hello.py
 ```
 
